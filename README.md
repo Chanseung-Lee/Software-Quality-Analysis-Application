@@ -41,3 +41,7 @@ The application also supports a relational database which is up and running alon
 The database also stores custom data, such as the average code coverage for each month, which is calculated monthly and stored indefinitely going forward. 
 
 <kbd><img src="https://github.com/FluffyCrocodile/Storage/blob/c73e8ab9714225f52ab895ffd3d5f38be2110061/rw.JPG" width="500"></kbd>
+
+# Key Purpose & Conclusion
+
+The application has not only provided a way for engineers at ESI who are part of each product line to assess the state of each project's software development according to the ISO-9001 Software Metric, but it also solidified itself as a tool that higher-up management members of the company could use to visualize all aspects of the software over time. The application is still up and running at ESI today, and widely being used by both the engineers and managers.
