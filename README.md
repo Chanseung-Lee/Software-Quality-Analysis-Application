@@ -6,7 +6,7 @@ Electro Scientific Industries has several product lines: Flex, Geode, MLCC, and 
 
 **Release Readiness Metrics** which was created by the quality assurance team to measure various aspects of the software process with the main concern of determining whether or not the software builds are ready for release to the customers
 
-<kbd><img src="https://github.com/FluffyCrocodile/Storage/blob/8650839694845137c6feb1eaec9f5553acd5a53d/Metrics.png" width="500"></kbd>
+<kbd><img src="https://github.com/FluffyCrocodile/Storage/blob/60d30499501be94032c1a93f205cdbdd86087feb/Metric.JPG" width="500"></kbd>
 
 It's important to note that while this code resembles the codebase of the API that's currently up and running on ESI's engineering server, you will need a machine that is connected to the MKS VPN in order to run the existing queries.
 Also, keep in mind that this is the backend API portion of the application, meaning that a frontend Power Bi App is required in order to properly make use of the data that's being queried here!
