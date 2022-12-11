@@ -11,6 +11,8 @@ Electro Scientific Industries has several product lines: Flex, Geode, MLCC, and 
 It's important to note that while this code resembles the codebase of the API that's currently up and running on ESI's engineering server, you will need a machine that is connected to the MKS VPN in order to run the existing queries.
 Also, keep in mind that this is the backend API portion of the application, meaning that a frontend Power Bi App is required in order to properly make use of the data that's being queried here!
 
+#Overview
+
 The app queries data from DevOps in order to create the metrics that populate each report. The categories of used information include WorkItems, Builds or runs, Build Definitions, and commits. The app currently implements the aforementioned metrics using these data across the main ESI product groups: Flex, Fusion, Geode, and MLCC projects.
 
 <kbd><img src="https://github.com/FluffyCrocodile/Storage/blob/88e7208a723686db66974830b4082f4eaab25c48/dia.JPG" width="600"></kbd>
@@ -24,3 +26,12 @@ The App can be accessed either via Power Bi Services, or following a direct link
 
 The application also supports a relational database which is up and running alongside this web api on the ESI build server. An external sqlite relational database stores build related data, such as build failures for the last 460 days (encapsulating at least the last 4 quarters from the current time), and last 30 builds for all build definitions. 
 The database also stores custom data, such as the average code coverage for each month, which is calculated monthly and stored indefinitely going forward. 
+
+#Backend API & FrontEnd Power Bi App
+
+As mentioned earlier, the BackEnd API is where the necessary data are acquired from Azure DevOps tfs client using a variety of different queries (such as WIQL queries and Build Queries). The API is set to be up and running on the ESI company's engineering build server along with the Data Gateway that connects the API to any and all Power Bi reports.
+
+<kbd><img src="https://github.com/FluffyCrocodile/Storage/blob/07ebdf5fa6acc8501147f475d6441b561d3b8509/fefefe.JPG" width="500"></kbd>
+
+The frontend of the application is a Power Bi application composed of many distinct Power Bi reports. Power Bi is a microsoft application for data analysis and display. However, it's very possible on paper to create a fresh, new different set of reports (or any other data analysis software) to query from this API. On a similar note, the code for this backend API can be slightly altered to query newly desired fields from a different DevOps group.
+
